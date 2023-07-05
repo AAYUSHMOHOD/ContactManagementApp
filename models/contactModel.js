@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const contactSchema = mongoose.Schema({
+    username: {
+        type: String,
+        required: [true, "Please add the user name"],
+    },
     name: {
         type: String,
         required: [true, "Please add Name"]
